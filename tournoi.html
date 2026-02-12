@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Château et Wyvern - Jeu de Cartes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Château et Wyvern">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#jeu">Le Jeu</a></li>
+                    <li><a href="#extensions">Extensions</a></li>
+                    <li><a href="magasin.html">Magasins</a></li>
+                    <li><a href="tournoi.html">Événements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="evenements" class="events">
+        <div class="container">
+            <h2 class="section-title">Événements et Tournois</h2>
+            <p class="section-description">
+                Rejoignez-nous pour des tournois passionnants et des événements exclusifs dans nos magasins partenaires.<br>
+            </p>
+            <div class="events-address">
+                <h3>Votre adresse</h3>
+                <p>Indiquez votre adresse pour voir les événements près de chez vous.</p>
+                <form class="address-form">
+                    <label class="address-label" for="player-address">Adresse</label>
+                    <div class="address-field">
+                        <input type="text" id="player-address" name="address" placeholder="Ex : 12 rue du Château, 44000 Nantes" autocomplete="street-address">
+                        <button type="button" class="btn btn-primary btn-small">Rechercher</button>
+                    </div>
+                </form>
+            </div>
+            <div class="events-grid" id="events-list">
+                <!-- Événement 1 -->
+                <div class="event-card upcoming" data-type="demo">
+                    <div class="event-header">
+                        <span class="event-type">🎮 Démo</span>
+                        <span class="event-badge">Bientôt !</span>
+                        <h3>Soirée Découverte</h3>
+                        <p class="event-date">📅 8 Février 2026 à 19h00</p>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-location">Royaume des Cartes - Nantes</p>
+                        <p class="event-description">Une soirée conviviale pour découvrir le jeu en famille ou entre amis.</p>
+                        <div class="event-details">
+                            <span class="event-detail">👥 Ouvert à tous</span>
+                            <span class="event-detail">⏰ Dans 2 jours</span>
+                        </div>
+                        <div class="event-footer">
+                            <span class="event-price free">Gratuit</span>
+                            <a href="#" class="btn btn-primary btn-small">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 2 -->
+                <div class="event-card" data-type="tournoi">
+                    <div class="event-header">
+                        <span class="event-type">🏆 Tournoi</span>
+                        <h3>Tournoi de Printemps</h3>
+                        <p class="event-date">📅 15 Mars 2026 à 14h00</p>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-location">Le Donjon du Jeu - Paris</p>
+                        <p class="event-description">Participez à notre grand tournoi de printemps avec des prix exceptionnels à gagner !</p>
+                        <div class="event-details">
+                            <span class="event-detail">👥 32 joueurs max</span>
+                            <span class="event-detail">⏰ Dans 37 jours</span>
+                        </div>
+                        <div class="event-footer">
+                            <span class="event-price">10 €</span>
+                            <a href="#" class="btn btn-primary btn-small">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 3 -->
+                <div class="event-card" data-type="lancement">
+                    <div class="event-header">
+                        <span class="event-type">🎉 Lancement</span>
+                        <h3>Lancement Extension 2</h3>
+                        <p class="event-date">📅 1er Avril 2026 à 18h00</p>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-location">L'Antre du Dragon - Lyon</p>
+                        <p class="event-description">Soyez parmi les premiers à découvrir l'extension "Lumière et Ténèbres" en avant-première !</p>
+                        <div class="event-details">
+                            <span class="event-detail">👥 Ouvert à tous</span>
+                            <span class="event-detail">⏰ Dans 54 jours</span>
+                        </div>
+                        <div class="event-footer">
+                            <span class="event-price">40€</span>
+                            <a href="#" class="btn btn-primary btn-small">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 4 -->
+                <div class="event-card" data-type="tournoi">
+                    <div class="event-header">
+                        <span class="event-type">🏆 Tournoi</span>
+                        <h3>Championnat Régional</h3>
+                        <p class="event-date">📅 5 Avril 2026 à 10h00</p>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-location">Le Comptoir des Wyverns - Toulouse</p>
+                        <p class="event-description">Qualifiez-vous pour le championnat national ! Format compétitif avec arbitrage officiel.</p>
+                        <div class="event-details">
+                            <span class="event-detail">👥 64 joueurs max</span>
+                            <span class="event-detail">⏰ Dans 58 jours</span>
+                        </div>
+                        <div class="event-footer">
+                            <span class="event-price">15 €</span>
+                            <a href="#" class="btn btn-primary btn-small">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Château et Wyvern. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

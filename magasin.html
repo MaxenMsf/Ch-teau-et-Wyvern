@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Château et Wyvern - Jeu de Cartes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Château et Wyvern">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#jeu">Le Jeu</a></li>
+                    <li><a href="#extensions">Extensions</a></li>
+                    <li><a href="magasin.html">Magasins</a></li>
+                    <li><a href="tournoi.html">Événements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="magasins" class="stores">
+        <div class="container">
+            <h2 class="section-title">Trouver un magasin</h2>
+            <p class="section-description">
+                Découvrez les magasins près de chez vous où vous pouvez acheter Château et Wyvern et participer aux événements.
+            </p>
+            <div class="store-locator">
+                <div class="map-container">
+                    <img src="images/carte-magasins.jpg" alt="Carte des magasins" class="store-map" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="map-placeholder" style="display: none;">
+                        <div class="map-placeholder-content">
+                            <h3>🗺️ Carte des Magasins</h3>
+                            <p>Nos magasins partenaires à travers la France</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stores-list">
+                    <h3>Nos magasins partenaires</h3>
+                    <div id="stores-results">
+                        <div class="store-card">
+                            <h4>Le Donjon du Jeu</h4>
+                            <p class="store-address">📍 15 Rue des Cartes, 75001 Paris</p>
+                            <p class="store-phone">📞 01 23 45 67 89</p>
+                            <p class="store-hours">🕒 Mar-Sam: 10h-19h</p>
+                        </div>
+                        <div class="store-card">
+                            <h4>L'Antre du Dragon</h4>
+                            <p class="store-address">📍 28 Avenue des Chevaliers, 69001 Lyon</p>
+                            <p class="store-phone">📞 04 12 34 56 78</p>
+                            <p class="store-hours">🕒 Lun-Sam: 9h30-19h30</p>
+                        </div>
+                        <div class="store-card">
+                            <h4>La Taverne Ludique</h4>
+                            <p class="store-address">📍 42 Boulevard du Château, 13001 Marseille</p>
+                            <p class="store-phone">📞 04 91 23 45 67</p>
+                            <p class="store-hours">🕒 Mar-Dim: 10h-20h</p>
+                        </div>
+                        <div class="store-card">
+                            <h4>Le Comptoir des Wyverns</h4>
+                            <p class="store-address">📍 7 Place du Jeu, 31000 Toulouse</p>
+                            <p class="store-phone">📞 05 61 12 34 56</p>
+                            <p class="store-hours">🕒 Lun-Sam: 10h-19h</p>
+                        </div>
+                        <div class="store-card">
+                            <h4>Royaume des Cartes</h4>
+                            <p class="store-address">📍 33 Rue Médiévale, 44000 Nantes</p>
+                            <p class="store-phone">📞 02 40 12 34 56</p>
+                            <p class="store-hours">🕒 Mar-Sam: 10h-18h30</p>
+                        </div>
+                        <div class="store-card">
+                            <h4>L'Épopée Fantastique</h4>
+                            <p class="store-address">📍 18 Cours des Stratèges, 33000 Bordeaux</p>
+                            <p class="store-phone">📞 05 56 12 34 56</p>
+                            <p class="store-hours">🕒 Lun-Sam: 9h-19h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Château et Wyvern. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

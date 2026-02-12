@@ -770,6 +770,66 @@ footer {
     padding: 80px 20px;
 }
 
+.events-address {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 8px 25px var(--shadow);
+    border: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.events-address h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+
+.events-address p {
+    text-align: center;
+    color: #5b4a3c;
+    margin-bottom: 1.2rem;
+}
+
+.address-form {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.address-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.address-field {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.address-field input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Crimson Text', serif;
+    background: white;
+}
+
+.address-field input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
 .events-filter {
     display: flex;
     justify-content: center;
@@ -959,6 +1019,11 @@ footer {
     
     .events-filter {
         gap: 10px;
+    }
+
+    .address-field {
+        flex-direction: column;
+        align-items: stretch;
     }
     
     .filter-btn {
